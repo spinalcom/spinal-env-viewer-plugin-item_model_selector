@@ -38,7 +38,7 @@ SpinalForgeExtention.registerExtention('ItemModelSelector', SpinalForgeExtention
   parentContainer: document.body,
 
   panel: {
-    title: "Selection de la maquette dans le fichier",
+    title: "Select the Model to load",
     classname: "spinal-pannel",
     closeBehaviour: "delete"
   },
