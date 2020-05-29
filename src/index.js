@@ -22,29 +22,8 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import Vue from 'vue';
 import { spinalContextMenuService } from "spinal-env-viewer-context-menu-service";
-import { ItemModelSelectorBtn } from "./btn/item-model-selector-btn";
-import { SpinalForgeExtention } from "spinal-env-viewer-panel-manager-service_spinalforgeextention";
-import ItemModelSelector from "./vue/item-model-selector.vue";
+import { UpdateBimObjectIdBtn } from "./btn/UpdateBimObjectIdBtn";
 
 const SIDE_BAR_HOOK_NAME = "GraphManagerSideBar";
-spinalContextMenuService.registerApp(SIDE_BAR_HOOK_NAME, new ItemModelSelectorBtn(), [7]);
-SpinalForgeExtention.registerExtention('ItemModelSelector', SpinalForgeExtention.createExtention({
-  name: "ItemModelSelector",
-  // Vue.extend to create a Compoment constructor
-  vueMountComponent: Vue.extend(ItemModelSelector),
-  // where to  append the Compoment
-  parentContainer: document.body,
-
-  panel: {
-    title: "Select the Model to load",
-    classname: "spinal-pannel",
-    closeBehaviour: "delete"
-  },
-  style: {
-    left: "405px",
-    width: "700px",
-    height: '250px'
-  }
-}));
+spinalContextMenuService.registerApp(SIDE_BAR_HOOK_NAME, new UpdateBimObjectIdBtn(), [7]);

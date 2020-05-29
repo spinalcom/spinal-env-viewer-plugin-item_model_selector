@@ -23,36 +23,3 @@
  */
 
 require("./src/index");
-// const {
-//   SpinalContextApp,
-//   spinalContextMenuService
-// } = require('spinal-env-viewer-context-menu-service');
-// const circularMenuHookName = 'circularMenu';
-
-// class BtnGetParams extends SpinalContextApp {
-//   constructor() {
-//     super('getProps', 'get props', {
-//       icon: 'description',
-//       icon_type: 'in',
-//       backgroundColor: '#356BAB',
-//       fontColor: '#FFFFFF'
-//     });
-//   }
-
-//   isShown(option) {
-//     return Promise.resolve(true);
-//   }
-//   action(option) {
-//     NOP_VIEWER.getProperties(
-//       NOP_VIEWER.getAggregateSelection()[0].selection[0],
-//       (props) => {
-//         copyToClip(JSON.stringify(props.properties));
-//         alert("Propteries are copied clipboard, for a simple view paste it https://json-csv.com/");
-//       });
-//   }
-// }
-// spinalContextMenuService.registerApp(
-//   circularMenuHookName,
-//   new BtnGetParams(),
-//   [7]
-// );
